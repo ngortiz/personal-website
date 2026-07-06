@@ -31,16 +31,20 @@ const server = http.createServer((req, res) => {
     if (error) {
       if(error.code == 'ENOENT') {
         fs.readFile('./index.html', (error, content) => {
-          res.writeHead(200, { 'Content-Type': 'text/html' });
-          res.end(content, 'utf-8');
+          if (error) {
+            res.writeHead(500);
+            res.end('Error loading index.html');
+          } else {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(content, 'utf-8');
+          }
         });
       }
       else {
         res.writeHead(500);
         res.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
       }
-      res.end(); 
-      }
+    }
     else {
       res.writeHead(200, { 'Content-Type': contentType });
       res.end(content, 'utf-8');
