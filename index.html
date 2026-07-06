@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta etiquetas SEO -->
+    <title>Nidia Ortiz - Desarrollador Full Stack | Automatización | Inteligencia Artificial</title>
+    <meta name="description" content="Desarrollador Full Stack especializado en automatización, Inteligencia Artificial, desarrollo web y sistemas a medida para empresas y emprendedores.">
+    <meta name="keywords" content="desarrollador web, automatización, inteligencia artificial, sistemas a medida, chatbots, APIs, desarrollo de software, Nidia Ortiz, python, javascript">
+    <meta name="author" content="Nidia Ortiz">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Nidia Ortiz - Desarrollador Full Stack | Automatización | IA">
+    <meta property="og:description" content="Desarrollo soluciones digitales para empresas y emprendedores. Creo páginas web modernas, sistemas a medida, automatizaciones e integraciones con Inteligencia Artificial.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nidiaortiz.dev">
+    <meta property="og:image" content="assets/images/corporate.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nidia Ortiz - Desarrollador Full Stack | Automatización | IA">
+    <meta name="twitter:description" content="Soluciones tecnológicas a medida para escalar y automatizar tu negocio.">
+    <meta name="twitter:image" content="assets/images/corporate.jpg">
+    
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    
+    <!-- Google Fonts Preconnect & Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics (Estructura preparada) -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+</head>
+<body class="dark-mode">
+
+    <!-- Canvas para Partículas de Fondo Interactivas -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Barra de Navegación Fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo"><img src="logo.png" alt="Logo NG Sistemas" class="nav-logo"> Nidia Ortiz</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#why">¿Por qué?</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Botón de Alternar Modo Oscuro/Claro -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <!-- Botón Hamburguesa Móvil -->
+                <button class="hamburger" id="hamburger" aria-label="Menú de navegación" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image reveal reveal-up">
+                    <div class="image-wrapper">
+                        <!-- Foto profesional de Nidia Ortiz -->
+                        <img src="mi-foto.jpg" alt="Nidia Ortiz - Programadora Web" class="profile-photo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%23121a2c\'/><text x=\'50\' y=\'55\' font-size=\'10\' text-anchor=\'middle\' fill=\'%2338bdf8\' font-family=\'Outfit\'>Nidia Ortiz</text></svg>'">
+                    </div>
+                </div>
+                <div class="hero-text reveal reveal-up">
+                    <h1 class="hero-name">Nidia Ortiz</h1>
+                    <h2 class="hero-title">Programación de Páginas Web y Sistemas para Negocios</h2>
+                    <p class="hero-description">Desarrollo soluciones digitales sencillas y eficientes para hacer crecer tu negocio local. Creo páginas web profesionales, sistemas de administración a medida, automatizaciones de tareas y bots de WhatsApp.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/593986381101?text=Hola%20Nidia,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios" target="_blank" class="btn btn-primary">Contactar por WhatsApp</a>
+                        <a href="#portfolio" class="btn btn-secondary">Ver Portafolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Sobre Mí</h2>
+            <div class="about-content glass-card reveal reveal-up">
+                <p>Soy programadora web independiente especializada en crear páginas profesionales para emprendedores y negocios locales. Me enfoco en diseñar sitios que sean visualmente atractivos, rápidos, fáciles de usar y funcionales en celulares para representar a tu negocio de forma excelente.</p>
+                <p style="margin-top: 20px; font-size: 1.15rem; color: var(--primary-color); font-weight: 500;">Ofrezco entrega rápida, trato directo y soluciones prácticas, porque sé que la tecnología debe facilitarte la vida, no complicarla.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Mis Servicios</h2>
+            <p class="section-subtitle reveal reveal-up">Soluciones tecnológicas sencillas y profesionales para que digitalices tu negocio y aumentes tus ventas.</p>
+            
+            <div class="services-grid">
+                
+                <!-- Servicio 1: Creación de Páginas Web -->
+                <div class="service-card glass-card reveal reveal-up delay-1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                            <line x1="14" y1="4" x2="10" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3>Creación de Páginas Web</h3>
+                    <p>Páginas web modernas, rápidas y adaptadas a celulares. Diseñadas especialmente para atraer clientes y representar la confianza de tu negocio.</p>
+                </div>
+                
+                <!-- Servicio 2: Bots para WhatsApp -->
+                <div class="service-card glass-card reveal reveal-up delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Bots para WhatsApp</h3>
+                    <p>Automatiza la atención de tu negocio. Contestadores automáticos inteligentes que responden consultas y agilizan las ventas las 24 horas.</p>
+                </div>
+                
+                <!-- Servicio 3: Automatización de Procesos -->
+                <div class="service-card glass-card reveal reveal-up delay-3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3>Automatización de Tareas</h3>
+                    <p>Ahorra tiempo eliminando trabajos manuales y repetitivos. Conectamos tus herramientas para que la información fluya sola y sin errores.</p>
+                </div>
+                
+                <!-- Servicio 4: Sistemas Administrativos a Medida -->
+                <div class="service-card glass-card reveal reveal-up delay-4">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Sistemas Administrativos</h3>
+                    <p>Programas personalizados y sencillos de usar para controlar tus ventas, membresías, inventarios o clientes según lo que tu negocio necesite.</p>
+                </div>
+                
+                <!-- Servicio 5: Mantenimiento y Soporte -->
+                <div class="service-card glass-card reveal reveal-up delay-5">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3>Soporte y Mantenimiento</h3>
+                    <p>Mantengo tu sitio web actualizado, seguro y funcionando al 100% de velocidad para que tú solo te enfoques en atender a tus clientes.</p>
+                </div>
+                
+                <!-- Servicio 6: Asesoría Tecnológica -->
+                <div class="service-card glass-card reveal reveal-up delay-6">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </div>
+                    <h3>Asesoría y Consultoría</h3>
+                    <p>¿No sabes por dónde empezar? Te asesoro de forma sencilla y sin rodeos técnicos sobre qué herramientas son mejores para digitalizar tu negocio.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Mi Portafolio</h2>
+            <p class="section-subtitle reveal reveal-up">Explora algunos de los sistemas desarrollados a medida para digitalizar y automatizar operaciones de diversos sectores.</p>
+            
+            <div class="portfolio-grid">
+                
+                <!-- Proyecto 1: NG English Platform -->
+                <div class="portfolio-card reveal reveal-up delay-1"
+                     data-title="NG English Platform"
+                     data-tag="Aplicación Web / Educación"
+                     data-desc="Plataforma interactiva de inglés diseñada para ayudar a las personas a aprender y practicar de forma práctica. Se centra especialmente en conversaciones estructuradas por temas de interés, facilitando el desarrollo de la fluidez verbal y la pérdida del miedo al hablar."
+                     data-img="assets/images/english-platform.png"
+                     data-tech="HTML5, CSS3, JavaScript Vanilla, WebSockets, LocalStorage"
+                     data-features="Prácticas de conversación guiadas | Filtros por tema o interés | Ejercicios de vocabulario interactivos | Diseño totalmente adaptable a celulares y tablets"
+                     data-github="https://github.com/ngortiz"
+                     data-live="">
+                    <div class="portfolio-image">
+                        <img src="assets/images/english-platform.png" alt="NG English Platform">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Aplicación Web / Educación</span>
+                        <h3>NG English Platform</h3>
+                        <p>Plataforma de Inglés, una aplicación web diseñada para ayudar a las personas a aprender y practicar inglés, centrándose especialmente en conversaciones por tema o interés.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2: Travel Agency -->
+                <div class="portfolio-card reveal reveal-up delay-2"
+                     data-title="Travel Agency"
+                     data-tag="Sistemas Web / Reservas"
+                     data-desc="Sistema completo que facilita a los clientes la búsqueda, comparación y compra de paquetes turísticos en línea. A su vez, provee al personal de la agencia de un completo panel administrativo para registrar destinos, controlar ventas e ingresos, y gestionar cotizaciones."
+                     data-img="assets/images/travel-agency.png"
+                     data-tech="HTML5, CSS3, JavaScript, Node.js, Express, PostgreSQL"
+                     data-features="Buscador y filtros avanzados de destinos | Panel administrativo de ventas e ingresos | Motor de cotizaciones en tiempo real | Generación de facturas y reportes de compra"
+                     data-github="https://github.com/ngortiz"
+                     data-live="">
+                    <div class="portfolio-image">
+                        <img src="assets/images/travel-agency.png" alt="Travel Agency Platform">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Sistemas Web / Reservas</span>
+                        <h3>Travel Agency</h3>
+                        <p>Plataforma diseñada para facilitar la búsqueda y compra de paquetes turísticos para los clientes, junto con un completo panel administrativo para la gestión de la empresa.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3: Adopt-a-friend -->
+                <div class="portfolio-card reveal reveal-up delay-3"
+                     data-title="Adopt-a-friend"
+                     data-tag="Plataforma Web / Social"
+                     data-desc="Una plataforma web interactiva diseñada para facilitar y promover la adopción responsable de mascotas. Conecta albergues y rescatistas que buscan hogares para animales con adoptantes interesados, automatizando los formularios de postulación."
+                     data-img="assets/images/adopt-friend.png"
+                     data-tech="HTML5, CSS3, JavaScript, Firebase Auth, Cloud Firestore"
+                     data-features="Filtros de búsqueda por especie, edad y tamaño | Formularios interactivos de postulación de adopción | Fichas detalladas con historia clínica de cada mascota | Panel de control para albergues y rescatistas"
+                     data-github="https://github.com/ngortiz"
+                     data-live="">
+                    <div class="portfolio-image">
+                        <img src="assets/images/adopt-friend.png" alt="Adopt-a-friend Platform">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Plataforma Web / Social</span>
+                        <h3>Adopt-a-friend</h3>
+                        <p>El sitio web Adopta un Amigo es una plataforma diseñada para facilitar la adopción de mascotas. Conecta animales en busca de un hogar con personas interesadas en adoptar de forma segura.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4: Ecommerce -->
+                <div class="portfolio-card reveal reveal-up delay-4"
+                     data-title="Ecommerce Platform"
+                     data-tag="Comercio Electrónico"
+                     data-desc="Aplicación web avanzada para tiendas en línea que permite gestionar todo el inventario, productos y ventas de forma centralizada. Su panel administrativo permite crear categorías de productos, diseñar plantillas y hacer el seguimiento del estado de los pedidos."
+                     data-img="assets/images/ecommerce.png"
+                     data-tech="HTML5, CSS3, JavaScript, Node.js, MongoDB, Express"
+                     data-features="Panel administrativo avanzado | Gestión de inventario, stock y categorías de productos | Carrito de compras y pasarela de pago simulada | Seguimiento de pedidos y notificaciones de estado"
+                     data-github="https://github.com/ngortiz"
+                     data-live="">
+                    <div class="portfolio-image">
+                        <img src="assets/images/ecommerce.png" alt="Ecommerce Admin Dashboard">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Comercio Electrónico</span>
+                        <h3>Ecommerce Platform</h3>
+                        <p>Aplicación web que permite a los administradores registrar productos, crear plantillas de diseño, organizar categorías y realizar un seguimiento en tiempo real de los pedidos.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5: Buscador de Peliculas -->
+                <div class="portfolio-card reveal reveal-up delay-5"
+                     data-title="Buscador de Películas"
+                     data-tag="Aplicación Web / Multimedia"
+                     data-desc="Aplicación web interactiva que permite a los usuarios buscar y explorar películas y series de televisión mediante la integración con una API externa. Los usuarios pueden filtrar por género y año de estreno, y hacer clic para ver sinopsis detalladas, elenco y valoraciones."
+                     data-img="assets/images/movie-search.png"
+                     data-tech="HTML5, CSS3, JavaScript, TMDb API, CSS Grid"
+                     data-features="Buscador y filtros dinámicos en tiempo real | Conexión a API externa de cine | Fichas detalladas con sinopsis, elenco y valoraciones | Sección de películas favoritas"
+                     data-github="https://github.com/ngortiz"
+                     data-live="">
+                    <div class="portfolio-image">
+                        <img src="assets/images/movie-search.png" alt="Buscador de Películas">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Aplicación Web / Multimedia</span>
+                        <h3>Buscador de Películas</h3>
+                        <p>Aplicación web que permite a los usuarios buscar películas y series a través de una API externa, filtrando por género o año, y visualizando información detallada al hacer clic.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 6: CrossFit CRM -->
+                <div class="portfolio-card reveal reveal-up delay-6"
+                     data-title="CrossFit CRM"
+                     data-tag="Sistemas Web / Gestión Deportiva"
+                     data-desc="Solución integral en la nube diseñada para administrar gimnasios, boxes de CrossFit o centros deportivos. Automatiza las tareas operativas diarias como el control de clientes, cobros de membresías, asistencia, ingresos y egresos, e incluye un asistente con inteligencia artificial por WhatsApp."
+                     data-img="assets/images/crossfit-crm.png"
+                     data-tech="HTML5, CSS3, JavaScript, Node.js, MySQL, WhatsApp Cloud API"
+                     data-features="Control detallado de clientes y membresías | Registro de asistencia interactivo | Reportes financieros y gráficos mensuales | Asistente inteligente integrado por WhatsApp"
+                     data-github="https://github.com/ngortiz"
+                     data-live="https://gestion-academias.ngsistemas.com/">
+                    <div class="portfolio-image">
+                        <img src="assets/images/crossfit-crm.png" alt="CrossFit CRM">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Sistemas Web / Gestión Deportiva</span>
+                        <h3>CrossFit CRM</h3>
+                        <p>Solución integral para administrar gimnasios, boxes de CrossFit o centros deportivos. Control de clientes, cobros, asistencia, reportes automatizados y asistente de IA por WhatsApp.</p>
+                        <a href="#" class="btn btn-secondary btn-detail">Ver detalles</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué trabajar conmigo? -->
+    <section id="why" class="why section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">¿Por qué trabajar conmigo?</h2>
+            <p class="section-subtitle reveal reveal-up">Garantizo una metodología de trabajo profesional enfocada en el retorno de inversión y la excelencia técnica.</p>
+            
+            <div class="why-grid">
+                
+                <div class="why-item glass-card reveal reveal-up delay-1">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Desarrollo rápido</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-2">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Diseño profesional</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-3">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Adaptado a celulares</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-4">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Soporte continuo</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-5">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Tecnología moderna</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-6">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Sistemas escalables</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-7">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Integraciones con IA</h3>
+                </div>
+                
+                <div class="why-item glass-card reveal reveal-up delay-8">
+                    <div class="why-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Automatizaciones</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Redes Sociales -->
+    <section id="social" class="social section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Redes Sociales</h2>
+            <p class="section-subtitle reveal reveal-up">Sígueme o contáctame en cualquiera de mis redes para ver más contenido y proyectos.</p>
+            
+            <div class="social-grid">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/593986381101" target="_blank" class="social-btn reveal reveal-up delay-1" style="--color: #25D366;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+                
+                <!-- Facebook -->
+                <a href="https://facebook.com/profile.php?id=61587458013593" target="_blank" class="social-btn reveal reveal-up delay-2" style="--color: #1877F2;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
+                
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@ngsystems" target="_blank" class="social-btn reveal reveal-up delay-3" style="--color: #00f2fe;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V0h-3.37v15.29a2.77 2.77 0 0 1-4.94 1.91 2.77 2.77 0 0 1 2.2-4.56 2.85 2.85 0 0 1 .28 0V8.86a6.15 6.15 0 0 0-.56 0 6.33 6.33 0 0 0 0 12.66 6.34 6.34 0 0 0 6.33-6.33v-7.2a7.69 7.69 0 0 0 4.6 1.68V8.17a4.85 4.85 0 0 1-2.76-.75z"/>
+                    </svg>
+                    <span>TikTok</span>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/nidia-ortiz-3211a7335" target="_blank" class="social-btn reveal reveal-up delay-4" style="--color: #0A66C2;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/ngortiz" target="_blank" class="social-btn reveal reveal-up delay-5" style="--color: #6e5494;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Contacto</h2>
+            <p class="section-subtitle reveal reveal-up">¿Tienes un proyecto en mente? Escríbeme y diseñemos juntos una solución tecnológica a la medida.</p>
+            
+            <div class="contact-content">
+                <!-- Formulario de Contacto -->
+                <div class="contact-form glass-card reveal reveal-left">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span>Enviar Mensaje</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Datos de Contacto Directo -->
+                <div class="contact-info reveal reveal-right">
+                    
+                    <!-- WhatsApp -->
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+593 98 638 1101</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Correo -->
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Correo</h4>
+                            <p>nidigprtiz21@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Ubicación -->
+                    <div class="contact-item glass-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Encarnación, Paraguay</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-name">Nidia Ortiz</div>
+                <p>&copy; 2026 Todos los derechos reservados. Desarrollado con pasión y tecnología avanzada.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/593986381101" target="_blank" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/profile.php?id=61587458013593" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/nidia-ortiz-3211a7335" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/ngortiz" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/593986381101?text=Hola%20Nidia,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios" target="_blank" class="floating-whatsapp" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.958.01c3.178.001 6.167 1.24 8.414 3.489 2.247 2.248 3.48 5.24 3.478 8.413-.004 6.544-5.341 11.883-11.9 11.883-2.003 0-3.97-.504-5.713-1.465L0 24zm6.59-3.805l.36.214c1.555.923 3.336 1.41 5.143 1.412 5.567 0 10.103-4.52 10.106-10.07.002-2.69-1.044-5.218-2.946-7.124-1.903-1.905-4.43-2.95-7.126-2.951-5.578 0-10.114 4.52-10.118 10.071-.001 1.897.493 3.754 1.431 5.372l.243.418-.952 3.476 3.562-.933zM16.6 13.82c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.58.13-.17.26-.67.85-.82 1.02-.15.17-.31.2-.57.07-.26-.13-1.11-.41-2.116-1.307-.783-.7-1.312-1.564-1.466-1.828-.15-.264-.016-.407.117-.54.12-.12.26-.3.4-.45.14-.15.18-.25.28-.41.1-.17.05-.31-.02-.45-.08-.13-.58-1.4-.79-1.92-.21-.52-.42-.45-.58-.45-.15 0-.32-.01-.5-.01-.17 0-.46.06-.7.33-.24.27-.92.9-.92 2.2 0 1.3.94 2.56 1.07 2.74.13.18 1.86 2.84 4.51 3.99.63.27 1.12.44 1.5.56.63.2 1.21.17 1.67.1.51-.08 1.54-.63 1.76-1.21.22-.58.22-1.07.15-1.21-.07-.14-.26-.22-.52-.35z"/>
+        </svg>
+    </a>
+
+    <!-- Botón de Volver Arriba Flotante -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver al inicio">
+        <svg viewBox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Modal de Detalles del Proyecto -->
+    <div id="projectModal" class="project-modal">
+        <div class="project-modal-content glass-card">
+            <button class="project-modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
+            <div class="project-modal-body">
+                <div class="project-modal-image">
+                    <img id="modalImage" src="" alt="Captura del proyecto">
+                </div>
+                <div class="project-modal-info">
+                    <span id="modalTag" class="portfolio-tag"></span>
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    
+                    <h4>Tecnologías Utilizadas</h4>
+                    <div id="modalTech" class="modal-tech-tags"></div>
+                    
+                    <h4>Características Clave</h4>
+                    <ul id="modalFeatures" class="modal-features-list"></ul>
+                    
+                    <div class="modal-buttons">
+                        <a id="modalLiveBtn" href="#" target="_blank" class="btn btn-primary">Visitar Sitio Web</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor para Notificaciones Flotantes (Toasts) -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Script de Lógica Local -->
+    <script src="script.js"></script>
+</body>
+</html>

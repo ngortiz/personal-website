@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidia Ortiz - Mi Sitio Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 700px;
+        }
+        .profile-photo {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00d4ff;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.4);
+            background: #1a1a2e;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            color: #a0a0b0;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #c0c0d0;
+            margin-bottom: 35px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.15rem;
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(0, 212, 255, 0.5);
+        }
+        .instructions {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+        .instructions h3 {
+            margin-bottom: 15px;
+            color: #00d4ff;
+        }
+        .instructions ol {
+            padding-left: 25px;
+            line-height: 2;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- TU FOTO APARECERÁ AQUÍ -->
+        <img src="tu-foto.jpg" alt="Nidia Ortiz" class="profile-photo">
+        
+        <h1>Nidia Ortiz</h1>
+        <h2>Desarrollador Full Stack | Automatización | Inteligencia Artificial</h2>
+        
+        <p>Desarrollo soluciones digitales para empresas y emprendedores. Creo páginas web modernas, sistemas a medida, automatizaciones e integraciones con Inteligencia Artificial para hacer crecer tu negocio.</p>
+        
+        <a href="https://wa.me/593986381101" target="_blank" class="btn">📱 Contactar por WhatsApp</a>
+        
+        <div class="instructions">
+            <h3>📸 Cómo poner TU FOTO:</h3>
+            <ol>
+                <li>Toma la foto que compartiste (la tuya personal)</li>
+                <li>Guárdala en tu escritorio con el nombre: <strong>tu-foto.jpg</strong></li>
+                <li>Cópiala y pégala en la carpeta: <strong>Personal Website</strong></li>
+                <li>Refresca esta página (F5 o Cmd+R)</li>
+            </ol>
+            <p style="margin-top: 15px; font-size: 0.95rem;">¡Listo! Tu foto aparecerá automáticamente.</p>
+        </div>
+    </div>
+</body>
+</html>

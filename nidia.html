@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidia Ortiz - Mi Sitio Profesional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 900px;
+            text-align: center;
+        }
+        .photo-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+        .photo-frame {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: linear-gradient(135deg, #00d4ff 0%, #764ba2 50%, #00d4ff 100%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: rotate 8s linear infinite;
+            background-size: 200% 200%;
+        }
+        @keyframes rotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .profile-img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(255,255,255,0.15);
+            box-shadow: 0 30px 100px rgba(0, 212, 255, 0.3);
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #00d4ff 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 1.8rem;
+            color: #a5b4fc;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .bio {
+            font-size: 1.25rem;
+            line-height: 1.9;
+            color: #e0e7ff;
+            margin-bottom: 45px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 22px 60px;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            box-shadow: 0 20px 60px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .whatsapp-btn:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(37, 211, 102, 0.5);
+        }
+        .success-badge {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 18px 40px;
+            background: rgba(37, 211, 102, 0.15);
+            border: 2px solid #25d366;
+            border-radius: 50px;
+            color: #86efac;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <div class="photo-frame"></div>
+            <!-- 🌟 TU FOTO PERSONAL ESTÁ AQUÍ 🌟 -->
+            <img src="mi-foto.jpg" alt="Nidia Ortiz - Desarrolladora Profesional" class="profile-img">
+        </div>
+        
+        <h1>Nidia Ortiz</h1>
+        <p class="tagline">Desarrollador Full Stack | Automatización | Inteligencia Artificial</p>
+        
+        <p class="bio">
+            Desarrollo soluciones digitales para empresas y emprendedores. Creo páginas web modernas, 
+            sistemas a medida, automatizaciones e integraciones con Inteligencia Artificial para hacer crecer tu negocio.
+        </p>
+        
+        <a href="https://wa.me/593986381101" target="_blank" class="whatsapp-btn">
+            <span>💬</span> ¡Hablemos por WhatsApp!
+        </a>
+        
+        <div class="success-badge">
+            ✨ ¡Bienvenida a tu sitio web profesional!
+        </div>
+    </div>
+</body>
+</html>
